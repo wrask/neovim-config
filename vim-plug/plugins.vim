@@ -41,81 +41,74 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File Tree
   Plug 'scrooloose/nerdtree'
 
-  if exists('g:vscode')
-    " Easy motion for VSCode
-    Plug 'asvetliakov/vim-easymotion'
-
-  else
     " Text Navigation
-    Plug 'justinmk/vim-sneak'
-    Plug 'unblevable/quick-scope'
-    " Plug 'easymotion/vim-easymotion'
-    " Add some color
-    Plug 'norcalli/nvim-colorizer.lua'
-    Plug 'junegunn/rainbow_parentheses.vim'
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    " Cool Icons
-    Plug 'ryanoasis/vim-devicons'
-    " Auto pairs for '(' '[' '{' 
-    Plug 'jiangmiao/auto-pairs'
-    " Closetags
-    Plug 'alvan/vim-closetag'
-    " Themes
-    " Plug 'christianchiarulli/onedark.vim'
-    Plug 'mhartington/oceanic-next'
-    " Plug 'dracula/vim'
-    " Plug 'kaicataldo/material.vim'
-    " Plug 'NLKNguyen/papercolor-theme'
-    " Plug 'tomasiser/vim-code-dark'
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Status Line
-    Plug 'vim-airline/vim-airline'
-    " Plug 'vim-airline/vim-airline-themes'
-    " Ranger
-    " Plug 'francoiscabrol/ranger.vim'
-    " Plug 'rbgrouleff/bclose.vim'
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    " Git
-    " Plug 'mhinz/vim-signify'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
-    " Terminal
-    " Plug 'voldikss/vim-floaterm'
-    " Start Screen
-    Plug 'mhinz/vim-startify'
-    " Vista
-    Plug 'liuchengxu/vista.vim'
-    " See what keys do like in emacs
-    Plug 'liuchengxu/vim-which-key'
-    " Zen mode
-    Plug 'junegunn/goyo.vim'
-    " Making stuff
-    Plug 'neomake/neomake'
-    " Snippets
-    Plug 'honza/vim-snippets'
-    Plug 'mattn/emmet-vim'
-    " Better Comments
-    " Plug 'jbgutierrez/vim-better-comments'
-    " Echo doc
-    " Plug 'Shougo/echodoc.vim'
-    " Interactive code
-    Plug 'ChristianChiarulli/codi.vim'
-    " Vim Wiki
-    " Plug 'https://github.com/vimwiki/vimwiki.git'
-  endif
-
+  Plug 'justinmk/vim-sneak'
+  Plug 'unblevable/quick-scope'
+  " Plug 'easymotion/vim-easymotion'
+  " Add some color
+  Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'junegunn/rainbow_parentheses.vim'
+  " Better Syntax Support
+  Plug 'sheerun/vim-polyglot'
+  " Cool Icons
+  Plug 'ryanoasis/vim-devicons'
+  " Auto pairs for '(' '[' '{' 
+  Plug 'jiangmiao/auto-pairs'
+  " Closetags
+  Plug 'alvan/vim-closetag'
+  " Themes
+  " Plug 'christianchiarulli/onedark.vim'
+  Plug 'mhartington/oceanic-next'
+  " Plug 'dracula/vim'
+  " Plug 'kaicataldo/material.vim'
+  " Plug 'NLKNguyen/papercolor-theme'
+  " Plug 'tomasiser/vim-code-dark'
+  " Intellisense
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Status Line
+  Plug 'vim-airline/vim-airline'
+  " Plug 'vim-airline/vim-airline-themes'
+  " Ranger
+  " Plug 'francoiscabrol/ranger.vim'
+  " Plug 'rbgrouleff/bclose.vim'
+  Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+  " FZF
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  " Git
+  " Plug 'mhinz/vim-signify'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
+  Plug 'junegunn/gv.vim'
+  " Terminal
+  " Plug 'voldikss/vim-floaterm'
+  " Start Screen
+  Plug 'mhinz/vim-startify'
+  " Vista
+  Plug 'liuchengxu/vista.vim'
+  " See what keys do like in emacs
+  Plug 'liuchengxu/vim-which-key'
+  " Zen mode
+  Plug 'junegunn/goyo.vim'
+  " Making stuff
+  Plug 'neomake/neomake'
+  " Snippets
+  Plug 'honza/vim-snippets'
+  Plug 'mattn/emmet-vim'
+  " Better Comments
+  " Plug 'jbgutierrez/vim-better-comments'
+  " Echo doc
+  " Plug 'Shougo/echodoc.vim'
+  " Interactive code
+  Plug 'ChristianChiarulli/codi.vim'
+  " Vim Wiki
+  " Plug 'https://github.com/vimwiki/vimwiki.git'
 
 call plug#end()
 
 " Automatically install missing plugins on startup
-autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
+"autocmd VimEnter *
+"  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+"  \|   PlugInstall --sync | q
+"  \| endif
