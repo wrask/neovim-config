@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File Tree
   Plug 'scrooloose/nerdtree'
 
-    " Text Navigation
+  " Text Navigation
   Plug 'justinmk/vim-sneak'
   Plug 'unblevable/quick-scope'
   " Plug 'easymotion/vim-easymotion'
@@ -49,7 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'junegunn/rainbow_parentheses.vim'
   " Better Syntax Support
-  Plug 'sheerun/vim-polyglot'
+  " Plug 'sheerun/vim-polyglot'
   " Cool Icons
   Plug 'ryanoasis/vim-devicons'
   " Auto pairs for '(' '[' '{' 
@@ -64,7 +64,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'NLKNguyen/papercolor-theme'
   " Plug 'tomasiser/vim-code-dark'
   " Intellisense
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " Status Line
   Plug 'vim-airline/vim-airline'
   " Plug 'vim-airline/vim-airline-themes'
@@ -101,7 +101,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Echo doc
   " Plug 'Shougo/echodoc.vim'
   " Interactive code
-  Plug 'ChristianChiarulli/codi.vim'
+  " Plug 'ChristianChiarulli/codi.vim'
   " Vim Wiki
   " Plug 'https://github.com/vimwiki/vimwiki.git'
 
