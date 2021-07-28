@@ -8,6 +8,17 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+  " Lua
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lua/popup.nvim'
+
+  " Telescope
+  Plug 'nvim-telescope/telescope.nvim'
+
+  " Treesitter
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
   " Change dates fast
   Plug 'tpope/vim-speeddating'
   
@@ -55,7 +66,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
+  Plug 'kabouzeid/nvim-lspinstall'
+  Plug 'glepnir/lspsaga.nvim'
   Plug 'hrsh7th/nvim-compe'
+  Plug 'tpope/vim-ragtag'
 
   " Text Navigation
   Plug 'justinmk/vim-sneak'
@@ -81,15 +95,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Themes
   " Plug 'christianchiarulli/onedark.vim'
   Plug 'mhartington/oceanic-next'
+  Plug 'sonph/onehalf', { 'rtp': 'vim' }
+  Plug 'arcticicestudio/nord-vim'
   " Plug 'dracula/vim'
   " Plug 'kaicataldo/material.vim'
   " Plug 'NLKNguyen/papercolor-theme'
   " Plug 'tomasiser/vim-code-dark'
   
-  " Intellisense
-
-
-
   " Status Line
   Plug 'vim-airline/vim-airline'
   " Plug 'vim-airline/vim-airline-themes'

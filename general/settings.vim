@@ -7,7 +7,7 @@ set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed 
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
-set ruler              			        " Show the cursor position all the time
+set ruler              			            " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
@@ -25,6 +25,7 @@ set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs 
+set colorcolumn=120                     " Code line length according to PSR 
 set relativenumber                      " Relative line numbers
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc

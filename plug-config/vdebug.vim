@@ -5,8 +5,8 @@ let g:vdebug_options= {
 \    "timeout" : 20,
 \    "on_close" : 'detach',
 \    "break_on_open" : 0,
-\    "ide_key" : '',
-\    "path_maps" : {'/var/www/html': '/home/INTEXSOFT/roman.dunik/work/just-php/code'},
+\    "ide_key" : 'PHPSTORM',
+\    "path_maps" : {'/var/www/html': '/home/romandunik/work/dockerized-tera-cms/src/'},
 \    "debug_window_level" : 0,
 \    "debug_file_level" : 0,
 \    "debug_file" : "",
@@ -16,3 +16,5 @@ let g:vdebug_options= {
 \    "marker_open_tree" : '▾'
 \}
 let g:vdebug_features = { 'max_children': 10000 }
+let g:vdebug_options['watch_window_style'] = 'compact'
+
