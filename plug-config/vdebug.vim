@@ -6,7 +6,7 @@ let g:vdebug_options= {
 \    "on_close" : 'detach',
 \    "break_on_open" : 0,
 \    "ide_key" : 'PHPSTORM',
-\    "path_maps" : {'/var/www/html': '/home/romandunik/work/dockerized-tera-cms/src/'},
+\    "path_maps" : {'/var/www/html': '/home/romandunik/work/phpfpm-nginx-docker/code'},
 \    "debug_window_level" : 0,
 \    "debug_file_level" : 0,
 \    "debug_file" : "",
@@ -18,3 +18,7 @@ let g:vdebug_options= {
 let g:vdebug_features = { 'max_children': 10000 }
 let g:vdebug_options['watch_window_style'] = 'compact'
 
+hi default DbgBreakptLine term=reverse ctermfg=White ctermbg=Green guifg=#ffffff guibg=#4b1515
+hi default DbgBreakptSign term=reverse ctermfg=White ctermbg=Green guifg=#ffffff guibg=#ff5370
+hi default DbgCurrentLine term=reverse ctermfg=White ctermbg=White guifg=#ffffff guibg=#264b33
+hi default DbgCurrentStackPositionLine term=reverse guibg=#264b33
