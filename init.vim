@@ -11,7 +11,6 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/which-key.vim
-
 source $HOME/.config/nvim/themes/syntax.vim
 source $HOME/.config/nvim/themes/oceanicnext.vim
 source $HOME/.config/nvim/themes/airline.vim
@@ -35,14 +34,13 @@ source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/vista.vim
+" source $HOME/.config/nvim/plug-config/easymotion.vim
+
+" Lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 luafile $HOME/.config/nvim/lua/completion.lua
 luafile $HOME/.config/nvim/lua/lsp.lua
-luafile $HOME/.config/nvim/lua/treesitter.lua
-" source $HOME/.config/nvim/plug-config/easymotion.vim
-
-" set leader key to ,
-let g:mapleader=","
+"luafile $HOME/.config/nvim/lua/treesitter.lua
 
 " Experimental
 

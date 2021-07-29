@@ -8,12 +8,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-  " Lua
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-lua/popup.nvim'
-
   " Telescope
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lua/popup.nvim'
 
   " Treesitter
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -33,6 +31,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   
   " Surround
   Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-unimpaired'
   
   " Better Comments
   Plug 'tpope/vim-commentary'
